@@ -1,9 +1,0 @@
-# Enable Rewrite Engine
-RewriteEngine On
-
-# Check if the requested file or directory exists
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-
-# Redirect all other requests to index.php with the query string
-# RewriteRule ^(.*)$ app.php?page=$1 [L,QSA]
